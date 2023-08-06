@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+bod {
+  background: black;
+  line-height: 1.1;
+  letter-spacing: 0em;
+}
