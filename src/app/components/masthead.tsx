@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Masthead: React.FC = () => {
   return (
-    <div className='min-h-screen flex flex-col items-center justify-center'>
+    <div className='min-h-screen flex flex-col items-center justify-center bg-cyan-400'>
         <video autoPlay loop muted playsInline className='absolute w-full h-full object-cover'>
             <source src='/assets/masthead-bg.m4v' type='video/mp4 codecs=hvc1'/>
             <source src='' type='video codecs=vp9'/>
