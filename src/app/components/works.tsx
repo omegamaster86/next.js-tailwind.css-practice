@@ -1,3 +1,4 @@
+"use server";
 import React from 'react'
 import {TileWrapper, TileBackground, TileContent, Tile } from './tile'
 
