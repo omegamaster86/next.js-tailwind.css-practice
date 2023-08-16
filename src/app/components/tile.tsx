@@ -6,7 +6,7 @@ interface WrapperProps {
     numOfPages: number
     children?: any
 }
-interface TitleContextValue {
+interface TileContextValue {
     numOfPages: number
     currentPage: number
 }
@@ -15,7 +15,7 @@ type Props = {
     children?: React.ReactNode;
   }
 
-export const TitleContext = React.createContext<TitleContextValue> ({
+export const TileContext = React.createContext<TileContextValue> ({
     numOfPages: 0,
     currentPage: 0
 })
@@ -39,11 +39,11 @@ export const TileWrapper: React.FC<WrapperProps> = ({ children, numOfPages }) =>
     }
 
     return (
-    <TitleContext.Provider value={{numOfPages, currentPage}}>
+    <TileContext.Provider value={{numOfPages, currentPage}}>
         <div ref={refContainer} className='relative bg-black text-white'>
             {children}
         </div>
-    </TitleContext.Provider>
+    </TileContext.Provider>
   ) 
 }
 export default TileWrapper
@@ -62,11 +62,11 @@ interface prop {
 }
 
 export const Tile: React.FC<prop> = ({ page, renderContent }) => {
-    const { currentPage, numOfPages } = useContext(TitleContext)
+    const { currentPage, numOfPages } = useContext(TileContext)
     const refContainer = useRef<HTMLDivElement>(null)
     const progress = Math.max(0, currentPage - page)
 
-    let opacity = Math.min(1, Math.max(0,progress * 4))
+    let opacity = Math.min(1, Math.max(0, progress * 4))
     if (progress > 0.85 && page < numOfPages -1) {
         opacity = Math.max(0, (1.0 - progress) * 4 ) 
     }
@@ -75,6 +75,7 @@ export const Tile: React.FC<prop> = ({ page, renderContent }) => {
         <div ref={refContainer} className='absolute top-0 w-full'
         style={{
             pointerEvents: progress >= 0 || progress >= 1 ? 'none' : undefined, opacity
-        }}>{renderContent({progress})}</div>
+        }}>{renderContent({ progress })}
+        </div>
     )
 }
