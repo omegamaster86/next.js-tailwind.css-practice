@@ -26,3 +26,4 @@ const SliderContainer: React.FC<Props> = ({children, initialOffsetX, className, 
     )
 }
 
+export default SliderContainer
