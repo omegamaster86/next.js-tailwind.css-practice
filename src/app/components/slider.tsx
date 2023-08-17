@@ -1,6 +1,7 @@
 'use client'
-import React, { useContext, useRef } from "react";
+import React, { useCallback, useContext, useRef } from "react";
 import { SizeContext } from "./size-observer";
+import useAnimationFrame from "./use-animation-frame";
 
 interface Props {
     initialOffsetX: number
@@ -17,11 +18,27 @@ const SliderContainer: React.FC<Props> = ({children, initialOffsetX, className, 
 
     const enabled = innerWidth < contentWidth
 
+    useAnimationFrame(enabled, useCallback(() => {
+        const {current: elContainer} = refContainer
+        const {current: elContent} = refContent
+        if (elContainer && elContent) {
+            refScrollX.current += 0.5
+            elContainer.scrollLeft = refScrollX.current
+            if (elContainer.scrollLeft >= elContent.clientWidth) {
+                refScrollX.current = 0
+                elContainer.scrollLeft = 0
+            }
+        }
+    },[]))
+
     return (
         <div ref={refContainer} className={`slider-container overflow-x-hidden whitespace-nowrap max-w-full pointer-events-none ${className}`}>
             <div ref={refContent} className='inline-block'>
                 {children}
             </div>
+              <div className={enabled ? 'inline-block' : 'hidden'}>
+                {children}
+              </div>
         </div>
     )
 }
