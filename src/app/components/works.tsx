@@ -14,8 +14,8 @@ const Works = () => (
         <WorkContainer>
             <WorkLeft progress={progress}>
                 <div>We build</div>
-                <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Pink Panda&apos;s app
-                    <WorkLink href='https://bambooassets.com/'></WorkLink>
+                <div className='text-4xl md:text-5xl font-semibold tracking-tight'>
+                    <WorkLink href='https://bambooassets.com/'>Pink Panda</WorkLink>&apos;s app
                 </div>
             </WorkLeft>
             <WorkRight progress={progress}>
@@ -30,7 +30,9 @@ const Works = () => (
         <WorkContainer>
             <WorkLeft progress={progress}>
                 <div>We helped</div>
-                <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Showtime ship faster.</div>
+                <div className='text-4xl md:text-5xl font-semibold tracking-tight'>
+                <WorkLink href='https://showtime.xyz/'>Showtime</WorkLink>ship faster.
+                </div>
             </WorkLeft>
             <WorkRight progress={progress}>
                 <Image src="/assets/showtime.jpg" layout="responsive" width={840} height={1620} alt="showtime"/>
