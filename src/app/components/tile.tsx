@@ -76,7 +76,7 @@ export const Tile: React.FC<prop> = ({ page, renderContent }) => {
     return (
         <div ref={refContainer} className='absolute top-0 w-full'
         style={{
-            pointerEvents: progress >= 0 || progress >= 1 ? 'none' : undefined, opacity
+            pointerEvents: progress <= 0 || progress >= 1 ? 'none' : undefined, opacity
         }}>{renderContent({ progress })}
         </div>
     )
