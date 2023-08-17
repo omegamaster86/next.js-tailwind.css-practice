@@ -14,6 +14,15 @@ const ClientLogos: React.FC = () => (
           <SliderItem width={150}>
             <Image src="/assets/vercel.svg" width={150} height={50} alt="vercel" objectFit="contain"/>
           </SliderItem>
+          <SliderItem width={150}>
+            <Image src="/assets/vercel.svg" width={150} height={50} alt="vercel" objectFit="contain"/>
+          </SliderItem>
+          <SliderItem width={150}>
+            <Image src="/assets/vercel.svg" width={150} height={50} alt="vercel" objectFit="contain"/>
+          </SliderItem>
+          <SliderItem width={150}>
+            <Image src="/assets/vercel.svg" width={150} height={50} alt="vercel" objectFit="contain"/>
+          </SliderItem>
         </SliderContainer>
     </>
 )
