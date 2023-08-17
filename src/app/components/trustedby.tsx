@@ -20,7 +20,6 @@ const TrustedBy: React.FC = () => (
                 </h3>
             </div>
         </div>
-        <div>test</div>
         <div className='flex-1 bg-black'></div>
     </section>
 )
