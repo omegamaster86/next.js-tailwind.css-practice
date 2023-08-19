@@ -1,7 +1,7 @@
 'use client'
 import React, { useContext, useCallback } from "react";
 import { CarouselContext } from "./carousel";
-import styles from './style/carsousel.module.css'
+import styles from './style/carousel.module.css'
 
 interface Props {
     index: number
