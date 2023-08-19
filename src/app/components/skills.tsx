@@ -1,7 +1,7 @@
 'use client'
 import React, { useContext, useRef } from 'react'
 import { ScrollContext } from './scroll-observer'
-import s from './skills.module.css'
+import s from './style/skills.module.css'
 
 const opacityForBlock = (sectionProgress:number, blockNo:number) => {
     const progress = sectionProgress - blockNo
