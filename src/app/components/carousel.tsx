@@ -1,3 +1,4 @@
+'use client'
 import { EmblaCarouselType } from "embla-carousel-react";
 import React, { useCallback, useEffect, useState, } from "react";
 import ClassNames from 'embla-carousel-class-names'
