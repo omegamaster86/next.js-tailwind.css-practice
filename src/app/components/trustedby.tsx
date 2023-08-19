@@ -22,7 +22,7 @@ const TrustedBy: React.FC = () => (
             </div>
         </div>
         <Testimonials />
-        <div className='flex-1 bg-black'></div>
+        <div></div>
     </section>
 )
 
