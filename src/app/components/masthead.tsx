@@ -29,7 +29,7 @@ const Masthead: React.FC = () => {
             <source src='' type='video codecs=vp9'/>
         </video>
         <div className={`flex-grow-0 pt-10 transition-opacity duration-1000 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}>
-            <Image src="assets/vercel.svg" width={128 / 3} height={114 / 3 } alt="logo"/>
+            <Image src="/assets/logo.png" width={128 / 3} height={114 / 3 } alt="logo"/>
         </div>
         <div className='p-12 font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-center flex-1 flex items-center justify-center flex-col'>
             <h1 className='mb-6 text-4xl xl:text-5xl'>Margelo</h1>
