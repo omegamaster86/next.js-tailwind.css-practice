@@ -22,7 +22,6 @@ const TrustedBy: React.FC = () => (
             </div>
         </div>
         <Testimonials />
-        <div></div>
     </section>
 )
 
