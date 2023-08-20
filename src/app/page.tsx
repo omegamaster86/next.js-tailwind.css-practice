@@ -5,6 +5,7 @@ import Skills from './components/skills'
 import Works from './components/works'
 import TrustedBy from './components/trustedby'
 import SizeObserver from './components/size-observer'
+import ContactUs from './components/contactus'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           <Skills/>
           <Works/>
           <TrustedBy/>
+          <ContactUs />
       </ScrollObserver>
     </SizeObserver>
   )
