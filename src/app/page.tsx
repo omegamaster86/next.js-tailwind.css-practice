@@ -6,6 +6,7 @@ import Works from './components/works'
 import TrustedBy from './components/trustedby'
 import SizeObserver from './components/size-observer'
 import ContactUs from './components/contactus'
+import Footer from './components/footer'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <Works/>
           <TrustedBy/>
           <ContactUs />
+          <Footer/>
       </ScrollObserver>
     </SizeObserver>
   )
