@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useCallback } from "react"
 import Image from "next/image"
+import { Axios } from "axios"
 
 const ContactUs: React.FC = () => {
     return(
