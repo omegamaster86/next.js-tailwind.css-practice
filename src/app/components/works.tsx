@@ -11,7 +11,7 @@ const Works = () => (
     </TileBackground>
     <TileContent>
         <Tile page={0} renderContent={({progress}) => (
-        <WorkContainer>
+        <WorkContainer progress={progress}>
             <WorkLeft progress={progress}>
                 <div>We build</div>
                 <div className='text-4xl md:text-5xl font-semibold tracking-tight'>
@@ -27,7 +27,7 @@ const Works = () => (
     </TileContent>
     <TileContent>
         <Tile page={1} renderContent={({progress}) => (
-        <WorkContainer>
+        <WorkContainer progress={progress}>
             <WorkLeft progress={progress}>
                 <div>We helped</div>
                 <div className='text-4xl md:text-5xl font-semibold tracking-tight'>
@@ -43,7 +43,7 @@ const Works = () => (
     </TileContent>
     <TileContent>
         <Tile page={2} renderContent={({progress}) => (
-        <WorkContainer>
+        <WorkContainer progress={progress}>
             <WorkLeft progress={progress}>
                 <div>Your image</div>
                 <div className='text-4xl md:text-5xl font-semibold tracking-tight'>image.iphone-bezels</div>
