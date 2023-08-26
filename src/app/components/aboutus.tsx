@@ -14,12 +14,12 @@ const AboutUs: React.FC = () => {
             <h2>Our Team</h2>
             <div className='mt-2'>the &ldquo;spec-ops&rdquo;</div>
             <div className='mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20'>
-                <Member id='marc' name='Marc' socialId='@mrousavy' link='https//github.com/mrousavy'/>
-                <Member id='szymon' name='Szymon' socialId='@szymon20000' link='https//github.com/szymon20000'/>
-                <Member id='thomas' name='Thomas' socialId='@thomas-coldwell' link='https//github.com/thomas-coldwell'/>
-                <Member id='marc' name='Marc' socialId='@mrousavy' link='https//github.com/mrousavy'/>
-                <Member id='szymon' name='Szymon' socialId='@szymon20000' link='https//github.com/szymon20000'/>
-                <Member id='thomas' name='Thomas' socialId='@thomas-coldwell' link='https//github.com/thomas-coldwell'/>
+                <Member id='marc' name='Marc' socialId='@mrousavy' href='https://github.com/mrousavy'/>
+                <Member id='szymon' name='Szymon' socialId='@szymon20000' href='https://github.com/Szymon20000'/>
+                <Member id='thomas' name='Thomas' socialId='@thomas-coldwell' href='https://github.com/thomas-coldwell'/>
+                <Member id='marc' name='Marc' socialId='@mrousavy' href='https://github.com/mrousavy'/>
+                <Member id='szymon' name='Szymon' socialId='@szymon20000' href='https://github.com/Szymon20000'/>
+                <Member id='thomas' name='Thomas' socialId='@thomas-coldwell' href='https://github.com/thomas-coldwell'/>
             </div>
         </div>
     </section>
