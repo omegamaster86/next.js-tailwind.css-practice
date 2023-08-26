@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 type Props = {
     children: React.ReactNode;
-    progress?: number;
+    progress: number;
   };
 
 export const WorkContainer: React.FC<Props> = ({ children }) => (
