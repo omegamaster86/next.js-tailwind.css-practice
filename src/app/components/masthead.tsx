@@ -21,13 +21,13 @@ const Masthead: React.FC = () => {
 
   return (
     <div ref={refContainer} className='min-h-screen flex flex-col items-center justify-center bg-cyan-400 sticky top-0 -z-10'
-    style={{
-        transform: `translateY(-${progress * 20}vh)`
-    }}>
-        <video autoPlay loop muted playsInline className='absolute w-full h-full object-cover'>
+        style={{
+            transform: `translateY(-${progress * 20}vh)`
+        }}>
+        {/* <video autoPlay loop muted playsInline className='absolute w-full h-full object-cover'>
             <source src='/assets/masthead-bg.m4v' type='video/mp4 codecs=hvc1'/>
             <source src='' type='video codecs=vp9'/>
-        </video>
+        </video> */}
         <div className={`flex-grow-0 pt-10 transition-opacity duration-1000 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}>
             <Image src="/assets/logo.png" width={128 / 3} height={114 / 3 } alt="logo"/>
         </div>
