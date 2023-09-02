@@ -83,7 +83,7 @@ const ContactUs: React.FC = () => {
                             Your message has been successfully sent. We will contact you very soon !
                         </div>
                     ) : (
-                        <div>
+                        <>
                             <input id="companyName" name="companyName" required maxLength={128} type="text" placeholder="Company Name" className="bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-2" onChange={handleOnChange} value={inputs.companyName}/>
                             <input id="email" name="email" type="email" required maxLength={128} placeholder="Your E-mail" className="bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-2" onChange={handleOnChange} value={inputs.email}/>
                             <textarea id="message" name="message" required maxLength={1048576} placeholder="Additional information" className="bg-black text-white outline-none border-2 border-white rounded-3xl px-8 py-6 min-h-[16em]" onChange={handleOnChange} value={inputs.message}></textarea>
@@ -92,7 +92,7 @@ const ContactUs: React.FC = () => {
                                     {!status.submitting ? !status.submitted ? 'Submit' : 'Submitted' : 'Submitting...'}
                                 </button>
                             </div>
-                        </div>
+                        </>
                     )}
                 </form>
             </div>
