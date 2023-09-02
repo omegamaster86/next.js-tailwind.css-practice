@@ -60,7 +60,7 @@ const ContactUs: React.FC = () => {
         );
       })
       .catch((error) => {
-        handleServerResponse(false, error.response.data.error);
+        handleServerResponse(false, error.response);
       });
     },[inputs, handleServerResponse])
 
