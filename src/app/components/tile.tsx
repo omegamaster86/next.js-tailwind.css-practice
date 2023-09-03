@@ -4,7 +4,7 @@ import { ScrollContext } from './scroll-observer'
 
 interface WrapperProps {
     numOfPages: number
-    children?: any
+    children?: React.ReactNode;
 }
 interface TileContextValue {
     numOfPages: number
